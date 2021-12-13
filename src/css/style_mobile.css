@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+@media screen and (min-width: 100px) and (max-width: 1300px) {
+
+    *,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+    p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+    .landing_section,
+    .background_container,
+    .background_image,
+    .content_container,
+    .title_container,
+    .title_h1,
+    .title_h3,
+    .part_container,
+    .part_sector,
+    .part_pic,
+    .part_text,
+    .part_h2_active,
+    .part_h2,
+    .part_p,
+    .button_container,
+    .button_h1
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 964px) {
+
+    .landing_section{ width: 99vw; height: 365vh; overflow: hidden;  }
+
+    .background_container{ width: 150vw; height: 470vh;   top: 355vh;  left: 10vw ;  }
+
+    .background_pic{
+        width: 150vw;
+        height: 470vh;
+        left: 200vw;
+        z-index: -1;
+    }
+
+    .content_container{
+        bottom: 100vh;
+        width: 90vw;
+        height: 345vh;
+        z-index: 3;
+    }
+
+    .title_container{
+        grid-template-rows: repeat(2,1fr);
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .title_h1{
+        color: #ffffff;
+        font-size: 3vh;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        width: 80vw;
+        height: 10vh;
+    }
+
+    .title_h3{
+        color: #ffffff;
+        font-size: 2.5vh;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        line-height:3.5vh;
+        width: 80vw;
+        height: 38vh;
+    }
+
+    .part_container{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 3vh;
+        width: 80vw;
+        height: 270vh;
+    }
+
+    .part_sector{
+        grid-template-rows: repeat(3,1fr);
+        width: 80vw;
+        height: 65vh;
+    }
+
+    .part_pic{
+        width: 80vw;
+        height: 20vh;
+        transition: all 0.4s linear;
+    }
+
+    .part_pic path{
+        stroke: #ffffff;
+        transition: all 0.4s linear;
+    }
+
+    .part_pic:hover path {
+        stroke: rgba(119,185,0, 1);;
+        fill: rgba(119,185,0, 0.3);
+        opacity: 1;
+        transition: all 0.4s linear;
+    }
+
+    .part_text{
+        grid-template-columns: repeat(2,1fr);
+        width: 80vw;
+        height: 10vh;
+    }
+
+    .part_h2_active{
+        justify-content: end;
+        padding-right: 1vw;
+        width: 38vw;
+        height: 8vh;
+        font-size: 3vh;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        color: #77B900;
+    }
+
+    .part_h2{
+        justify-content: start;
+        width: 40vw;
+        height: 8vh;
+        font-size: 3vh;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+    }
+
+    .part_p{
+        font-size: 3vh;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        line-height: 4vh;
+        width: 70vw;
+        height: 35vh;
+        color: #ffffff;
+    }
+
+    .button_container{
+        top: 1vh;
+        width: 45vw;
+        height: 10vh;
+        border: none;
+        border-radius: 1vh;
+        background-color: #77B900;
+        cursor: pointer;
+        transition: all 0.4s linear;
+    }
+
+    .button_h1{
+        font-size: 4vh;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        transition: all 0.4s linear;
+    }
+
+    .button_container:hover{
+        color: #77B900;
+        background-color: rgba(000,000,000, 0.5);
+        box-shadow: 0 0 0.75vh 0.5vw rgba(119, 185, 0, 0.2);
+        transition: all 0.4s linear;
+    }
+
+}
+
+@media screen and (min-width: 965px) and (max-width: 1300px) {
+
+    .landing_section{
+        width: 99vw;
+        height: 225vh;
+        overflow: hidden;
+
+    }
+
+    .background_container{
+        width: 150vw;
+        height: 320vh;
+        top: 135vh;
+        left: 10vw ;
+    }
+
+    .background_pic{
+        width: 150vw;
+        height: 315vh;
+        left: 210vw;
+        z-index: -1;
+    }
+
+    .content_container{
+        bottom: 85vh;
+        width: 90vw;
+        height: 205vh;
+        z-index: 3;
+    }
+
+    .title_container{
+        grid-template-rows: repeat(2,1fr);
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .title_h1{
+        font-size: 4vh;
+        font-weight: 500;
+        width: 80vw;
+        height: 10vh;
+    }
+
+    .title_h3{
+        font-size: 2.5vh;
+        font-weight: 500;
+        line-height:3.5vh;
+        width: 80vw;
+        height: 30vh;
+    }
+
+    .part_container{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 3vh;
+        width: 96vw;
+        height: 140vh;
+    }
+
+    .part_sector{
+        grid-template-rows: repeat(3,1fr);
+        width: 44vw;
+        height: 67vh;
+    }
+
+    .part_pic{
+        width: 38vw;
+        height: 20vh;
+        transition: all 0.4s linear;
+    }
+
+    .part_pic path{
+        stroke: #ffffff;
+        transition: all 0.4s linear;
+    }
+
+    .part_text{
+        grid-template-columns: repeat(2,1fr);
+        width: 40vw;
+        height: 10vh;
+    }
+
+    .part_h2_active{
+        justify-content: end;
+        padding-right: 1vw;
+        width: 20vw;
+        height: 8vh;
+        font-size: 2.5vh;
+    }
+
+    .part_h2{
+        justify-content: start;
+        width: 20vw;
+        height: 8vh;
+        font-size: 2vh;
+    }
+
+    .part_p{
+        font-size: 2.5vh;
+        line-height: 4vh;
+        width: 40vw;
+        height: 40vh;
+    }
+
+    .button_container{
+        top: 2.5vh;
+        width: 30vw;
+        height: 8vh;
+    }
+
+    .button_h1{ font-size: 3vh; }
+
+}

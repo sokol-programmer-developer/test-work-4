@@ -1,0 +1,191 @@
+
+
+@media screen and (min-width: 100px) and (max-width: 1300px) {
+    *,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+    p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+    .popup_section,
+    .popup_button_open,
+    .popup_button_h2,
+    .popupContent_overlay,
+    .popupContent_popup,
+    .popupContent_title,
+    .popupContent_h2,
+    .popupContent_close
+    {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        display: grid;
+        position: relative;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'Roboto', sans-serif;
+    }
+
+}
+
+@media screen and (min-width: 100px) and (max-width: 964px) {
+
+
+    .popup_section{
+        width: 100vw;
+        height: 370vh;
+        bottom: 460vh;
+    }
+
+
+    .popup_button{
+        top: 5vh;
+        width: 26vw;
+        height: 8vh;
+    }
+
+    .popup_button:hover{
+        color: #77B900;
+        background-color: rgba(000,000,000, 0.5);
+        box-shadow: 0 0 3vh 3vw rgba(119, 185, 0, 0.2);
+        transition: all 0.4s linear;
+    }
+
+
+    .popup_button_h2{
+        font-size: 3vh;
+    }
+
+    .popupContent_overlay{
+        z-index: 10;
+        width: 100vw;
+        height: 370vh;
+        background-color: rgba(000,000,000, 0.5);
+        transition: opacity 500ms;
+    }
+
+    .popupContent_popup {
+        position: fixed;
+        grid-template-rows: repeat(2,1fr);
+        width: 80vw;
+        height: 50vh;
+        background-color: rgba(000,000,000, 1);
+        box-shadow: 0 0 3vh 3vw rgba(119, 185, 0, 0.2);
+        bottom: 20vh;
+
+
+    }
+
+    .popupContent_title{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 60vw;
+        height: 7vh;
+        bottom: 0;
+        grid-column-gap: 5vw;
+    }
+
+    .popupContent_h2 {
+        color: #333;
+        font-size: 3vh;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(255,255,255, 1);
+        width: 46vw;
+        height: 7vh;
+    }
+
+    .popupContent_close{
+        width: 10vw;
+        height: 7vh;
+        font-size: 10vh;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgba(255,255,255, 1);
+    }
+
+    .popupContent_close:hover{
+        color: #77B900;
+    }
+
+}
+
+@media screen and (min-width: 965px) and (max-width: 1300px) {
+
+    .popup_section{
+        width: 100vw;
+        height: 250vh;
+        bottom: 300vh;
+    }
+
+    .popup_button{
+        top: 5vh;
+        width: 26vw;
+        height: 8vh;
+    }
+
+    .popup_button:hover{
+        color: #77B900;
+        background-color: rgba(000,000,000, 0.5);
+        box-shadow: 0 0 2vh 2vw rgba(119, 185, 0, 0.2);
+        transition: all 0.4s linear;
+    }
+
+    .popup_button_h2{
+        font-size: 3vh;
+    }
+
+    .popupContent_overlay{
+        z-index: 10;
+        width: 100vw;
+        height: 250vh;
+        background-color: rgba(000,000,000, 0.5);
+        transition: opacity 500ms;
+    }
+
+    .popupContent_popup {
+        grid-template-rows: repeat(2,1fr);
+        width: 60vw;
+        height: 50vh;
+        bottom: 25vh;
+        background-color: rgba(000,000,000, 1);
+        box-shadow: 0 0 2vh 2vw rgba(119, 185, 0, 0.2);
+        position: fixed;
+    }
+
+    .popupContent_title{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+        width: 50vw;
+        height: 5vh;
+        bottom: 0;
+        grid-column-gap: 5vw;
+    }
+
+    .popupContent_h2 {
+        color: #333;
+        font-size: 3vh;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+        color: rgba(255,255,255, 1);
+        width: 40vw;
+        height: 5vh;
+    }
+
+    .popupContent_close{
+        width:6vw;
+        height: 5vh;
+        font-size: 7vh;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgba(255,255,255, 1);
+    }
+
+    .popupContent_close:hover{
+        color: #77B900;
+    }
+
+}
+

@@ -1,0 +1,80 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.login,
+.login_form,
+.login_form_group,
+.login_button,
+.login_button_h2{
+    width: 99vw;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login{
+    width: 25vw;
+    height: 25vh;
+    bottom: 2vh;
+}
+
+.login_form{
+    grid-template-rows: repeat(3, 1fr);
+    width: 25vw;
+    height: 24vh;
+}
+
+.login_form_group{
+    width: 20vw;
+    height: 5vh;
+}
+
+.login_form_group input{
+    width: 20vw;
+    height: 5vh;
+    font-size: 2vh;
+    color: green;
+}
+
+.login_button{
+    width: 6vw;
+    height: 4vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    bottom: 0;
+    background-color: #77B900;
+
+}
+
+.login_button_h2{
+    width: 5vw;
+    height: 4vh;
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(000,000,000, 1);
+}
+
+.login_button:hover{
+
+    background-color: rgba(000,000,000, 0.5);
+    box-shadow: 0 0 0.75vh 0.5vw rgba(119, 185, 0, 0.2);
+    transition: all 0.4s linear;
+}
+.login_button:hover .login_button_h2{  color: #77B900;  }
+

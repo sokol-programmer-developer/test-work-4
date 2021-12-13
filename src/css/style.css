@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+*,*::before,*::after{ padding: 0;  margin: 0;  box-sizing: border-box; user-select: none}
+
+p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
+
+.landing_section,
+.background_container,
+.background_image,
+.content_container,
+.title_container,
+.title_h1,
+.title_h3,
+.part_container,
+.part_sector,
+.part_pic,
+.part_text,
+.part_h2_active,
+.part_h2,
+.part_p,
+.button_container,
+.button_h1
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.landing_section{   width: 100vw; height: 100vh; overflow: hidden; }
+
+.background_container{ width: 100vw; height: 145vh; top: 90vh; }
+
+.background_pic{
+    width: 100vw;
+    height: 110vh;
+    z-index: -1;
+}
+
+.content_container{
+    bottom: 20vh;
+    width: 90vw;
+    height: 80vh;
+}
+
+.title_container{
+    grid-template-rows: repeat(2,1fr);
+    width: 80vw;
+    height: 20vh;
+}
+
+.title_h1{
+    color: #ffffff;
+    font-size: 4vh;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title_h3{
+    color: #ffffff;
+    font-size: 2.25vh;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height:3.5vh;
+}
+
+.part_container{
+    grid-template-columns: repeat(4,1fr);
+    width: 90vw;
+    height: 51vh;
+}
+
+.part_sector{
+    width: 21vw;
+    height: 50vh;
+
+}
+.part_pic{
+    width: 15vw;
+    height: 10vh;
+    transition: all 0.4s linear;
+}
+
+.part_pic path{
+    stroke: #ffffff;
+    transition: all 0.4s linear;
+}
+
+.part_pic:hover path {
+    stroke: rgba(119,185,0, 1);;
+    fill: rgba(119,185,0, 0.3);
+    opacity: 1;
+    transition: all 0.4s linear;
+}
+
+.part_text{
+    grid-template-columns: repeat(2,1fr);
+    width: 15vw;
+    height: 10vh;
+}
+
+.part_h2_active{
+    justify-content: end;
+    padding-right: 0.5vw;
+    width: 9vw;
+    height: 5vh;
+    font-size: 1.9vh;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #77B900;
+}
+
+.part_h2{
+    justify-content: start;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.9vh;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+.part_p{
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height:3vh;
+    width: 15vw;
+    height: 20vh;
+    color: #ffffff;
+}
