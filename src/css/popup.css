@@ -118,7 +118,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
 }
 
 .popupContent_close:hover {
-  background-color: none;
+  background-color: rgba(000, 000, 000, 0);
 }
 
 .popupContent_close:hover{
