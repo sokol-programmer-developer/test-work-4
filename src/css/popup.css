@@ -113,7 +113,7 @@ p,h1,h2,h3,h4,ul,li,a {list-style: none; text-decoration: none;  }
     font-weight: bold;
     text-decoration: none;
     color: rgba(255,255,255, 1);
-    
+    background-color: rgba(000, 000, 000, 0);
     border: none;
 }
 
