@@ -32,8 +32,8 @@ const Popup = (props) => {
 
                     <h2  className="popupContent_h2">{props.title}</h2>
 
-                    <h2 className="popupContent_close" onClick={closeHandler} >  &times; </h2>
-
+                   <button className='popupContent_close' onClick={closeHandler}> &times; </button>            
+                          
                 </div>
 
                 <  Login/>
